@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(netstat:*)",
+      "Bash(cmd /c \"taskkill /PID 41752 /F\")",
+      "Bash(cmd /c \"taskkill /PID 41752 /F 2>&1\")",
+      "Bash(cmd //c \"taskkill //PID 41752 //F\")",
+      "Bash(powershell -Command \"Stop-Process -Id 41752 -Force -ErrorAction SilentlyContinue; Start-Sleep 1; Test-NetConnection -ComputerName localhost -Port 3001 | Select-Object TcpTestSucceeded\")",
+      "Bash(sleep:*)",
+      "Bash(npm install:*)",
+      "Bash(firebase:*)",
+      "Bash(echo:*)",
+      "Bash(cp:*)"
+    ]
+  }
+}

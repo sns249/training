@@ -1,0 +1,17 @@
+{
+  "name": "trainingtimetracker",
+  "version": "1.0.0",
+  "description": "Training Batch Time Tracker — local web app for tracking training session time",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "private": true
+}

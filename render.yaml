@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: trainingtimetracker-api
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: cd backend-cloud && npm install
+    startCommand: cd backend-cloud && node server.js
+    envVars:
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false          # set manually in Render dashboard (secret)
+      - key: NODE_ENV
+        value: production

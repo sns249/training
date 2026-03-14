@@ -1,0 +1,50 @@
+# ── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+
+# ── Build output ──────────────────────────────────────────────────────────────
+frontend/dist/
+
+# ── Local database & data ─────────────────────────────────────────────────────
+backend/data/
+backend-cloud/data/
+
+# ── Environment variables ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+# Keep .env.development and .env.production (no secrets in them)
+!frontend/.env.development
+!frontend/.env.production
+
+# ── Firebase service account (NEVER commit this) ─────────────────────────────
+*-service-account*.json
+serviceAccount*.json
+firebase-adminsdk*.json
+google-credentials*.json
+
+# ── Firebase ──────────────────────────────────────────────────────────────────
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+.tmp/
+tmp/

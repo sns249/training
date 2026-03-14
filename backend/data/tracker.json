@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "fuqwlifqwehoj",
+      "createdAt": "2026-03-14T06:39:58.222Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "name": "fweliufaluifh",
+      "type": "module",
+      "createdAt": "2026-03-14T06:40:04.380Z"
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "taskId": 1,
+      "startedAt": "2026-03-14T06:40:08.577Z",
+      "stoppedAt": "2026-03-14T06:40:55.106Z",
+      "durationSeconds": 46
+    }
+  ],
+  "_seq": {
+    "projects": 1,
+    "tasks": 1,
+    "entries": 1
+  }
+}
